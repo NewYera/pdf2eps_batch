@@ -1,32 +1,38 @@
 # pdf2eps
-Convert PDF to encapsulated PostScript
+将 PDF 批量转换为封装的PostScript（eps）
 
-### In Windows
+## 多个PDF文件批量处理
+### 在 Windows 上
 
-You can use Windows command line (a.k.a. cmd) , and type (change directory to bash file location)
+将`pdf2eps_all.bat`文件与将要转换的`.pdf`文件放置在同一目录下，双击`pdf2eps_all.bat`，等待处理完毕即可。
+
+## 单个PDF文件处理
+### 在 Windows 上
+
+你可以使用 Windows 命令行（cmd），并输入（先切换目录到批处理文件所在位置）：
 
 `./pdf2eps.bat <page number> <pdf file>`
 
-for example,
+例如：
 
 `./pdf2eps.bat 1 input.pdf`
 
-### In Unix (include MacOS)
+### 在 Unix 上（包括 macOS）
 
-You can use Terminal , and type (change directory to bash file location)
+你可以使用终端，并输入（先切换目录到脚本文件所在位置）：
 
 `$ bash ./pdf2eps.sh <page number> <pdf file>`
 
-for example,
+例如：
 
 `$ bash ./pdf2eps.sh 1 input.pdf`
 
-## Requirement
+## 依赖
 1. TeXLive
-2. If your `pdftops` command is not found , you must install `poppler`.
+2. 如果找不到 `pdftops` 命令，你需要安装 `poppler`。
 
-## License
+## 许可证
 
-The code is based on Herbert's accepted answer. You can found [here](https://tex.stackexchange.com/questions/20883/how-to-convert-pdf-to-eps).
+代码基于 Herbert 的被采纳答案。你可以在这里找到：[https://tex.stackexchange.com/questions/20883/how-to-convert-pdf-to-eps](https://tex.stackexchange.com/questions/20883/how-to-convert-pdf-to-eps)。
 
-This program released under [MIT License](LICENSE).
+本程序以 [MIT 许可证](LICENSE) 发布。
